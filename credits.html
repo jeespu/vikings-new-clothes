@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="menu.css"/>
+    </head>
+    <body>
+        <div id="creditsPage">
+            
+            <div id="creditsHeader">
+            <h1>Credits</h1>
+            </div>
+            <div id="creditsList">
+                <div class="creator">
+                    <h2>Jesse Kämäräinen</h2>
+                    <ul>
+                        <li>Animation: Hunter</li>
+                        <li>Soundtrack</li>
+                        <li>Additional music and<br>sound design</li>
+                        <li>Game: Hunter</li>
+                        <li>Project management<br>and assembly</li>
+                        <li>Character design:<br>Hunter Halfbjorn</li>
+                    </ul>
+                </div>
+                <div class="creator">
+                    <h2>Leevi Kukkonen</h2>
+                    <ul>
+                        <li>Animation: Outro</li>
+                        <li>Game: Blacksmith</li>
+                        <li>Character design: Folke, Blacksmith Anderson, the Maiden, the Bear, the Thug</li>
+                        <li>Additional graphic design</li>
+                    </ul>
+                </div>
+                <div class="creator">
+                    <h2>Jouni Timonen</h2>
+                    <ul>
+                        <li>Animation: Intro</li>
+                        <li>Game: Elder</li>
+                        <li>Character design:<br>the Elder, the Thug</li>
+                        <li>Additional graphic design</li>
+                    </ul>
+                </div>
+                <div class="creator">
+                    <h2>Dmitry Sklyarov</h2>
+                    <ul>
+                        <li>Animation: Bear</li>
+                        <li>Game: Bear Chase</li>
+                    </ul>
+                </div>
+            </div>
+            <img id="backButton" src="Graphics/Menu/CreditsBack.png" onclick="back();"/>
+        </div>
+    </body>
+    <script src="Scripts/HuntGame/jQuery.js"></script>
+    <script>
+        function back() {
+            $('body').load('index.html');
+        }
+    </script>
+</html>

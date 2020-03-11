@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "Crow1.png",
+	"frame": {"x":0,"y":0,"w":68,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":39},
+	"sourceSize": {"w":68,"h":39}
+},
+{
+	"filename": "Crow2.png",
+	"frame": {"x":0,"y":39,"w":68,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":39},
+	"sourceSize": {"w":68,"h":39}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Crow_animation_right.png",
+	"format": "RGBA8888",
+	"size": {"w":68,"h":71},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e88c247600b000e40b67cdc523acf918:fab48f34870e11755ca168e68a55a196:ede1e191ef35571f2f2f3e457d4cbcc2$"
+}
+}

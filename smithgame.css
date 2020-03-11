@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(Fonts/Norse.otf);
+    
+    font-family: 'norseRegular';
+    src: url('Fonts/norse-webfont.woff2') format('woff2'),
+         url('Fonts/norse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontPreload {
+    position:absolute;    
+    left:-100px;
+}
+
+#loadImage {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    margin: 5% auto;
+}
+
+#smithcontainer {
+    margin: 5% auto;
+}
+/*body{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}div{
+    position: relative;
+}
+button{
+    position: relative;
+}
+#meter{
+    background-image: url(meter.png);
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 50px;
+    margin: 0px;
+}
+#metercontainer{
+    height: 140px;
+    width: 720px;
+    background-image:url(meter_bottom.jpg);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    margin: 0px;
+    position: relative;
+
+}
+#gamecontainer{
+    background-color: dimgrey;
+    height: 720px;
+    width: 1280px;
+    margin: 20px;
+    position: absolute;
+}
+#metermarker{
+    position: relative;
+}*/

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('Fonts/Norse.otf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'norseRegular';
+    src: url('Fonts/norse-webfont.woff2') format('woff2'),
+         url('Fonts/norse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#loadImage {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+body {
+    background-color: #111111;
+    margin: 0;
+    font-family:'Norse';
+}
+
+canvas {
+    margin: 5% auto;
+    display: block;
+    border: 1px solid #000000;
+}
+
+#container {
+    margin: 5% auto;
+    background-image: url(Graphics/Menu/Menu_Background.png);
+    background-size: cover;
+    border: 1px solid black;
+    width: 1280px;
+    height: 720px;
+}
+
+#folke {
+    position: relative;
+    overflow:hidden;
+    display:inline;
+    bottom: 0px;
+}
+
+#logo {
+    margin: 70px auto;
+    display: block;
+}
+
+#start {
+    display: blocK;
+    margin: 80px auto 0;
+}
+
+#credits {
+    display: block;
+    margin: 30px auto;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+
+.menuItem {
+    transition: 0.5s ease;
+}
+
+#creditsHeader {
+    font-family: 'norseRegular';
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#creditsPage {
+    border: 1px solid white;
+    background-image: url(Graphics/Menu/Credits_Background.png);
+    color: white;
+    width: 1280px;
+    height: 720px;
+    display: block;
+    margin: 5% auto;
+}
+
+#creditsList {
+    margin-left: 7%
+}
+
+.creator {
+    font-family: 'norseRegular';
+    margin-right: 10px;
+    margin-left: 10px;
+    float:left;
+    width: 260px;
+    text-align: center;
+}
+
+.creator li {
+    font-size: 24px;
+}
+
+.creator h2 {
+    text-align: center;
+    font-size: 2.6em;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: square;
+}
+
+#backButton {
+    transform: scale(0.8);
+    float: right;
+    transition: 100ms ease;
+    bottom: 50px;
+    display: inline;
+    margin-top: 200px;
+    margin-right: 50px;
+}
+
+#backButton:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.dot{
+  width:35px;
+  height:35px;
+  position:absolute;
+  background: url(http://www.clipartqueen.com/image-files/red-lobed-fall-clipart-leaf.png);
+  background-size: 100% 100%;
+}

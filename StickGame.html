@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Viking's new clothes</title>
+    <link rel="stylesheet" type="text/css" href="StickGame.css"/>
+</head>
+<body>
+    <div class="fontPreload" style="font-family: norseRegular;">.</div>
+    <div id="stickContainer">
+    <div id="stickGame">
+
+    </div>
+    <div id="stickwrap">
+        <video id=viD width="1280" height="720" autoplay>
+            <source src="Animations/IntroAnimation.mp4" type="video/mp4">
+        </video>
+        <div id="stick_skip_button">
+
+        </div>    
+    </div>
+    
+        <div id="background_intro">
+            <div class="quitGameBtn" type="button" onclick="reload()">
+                <img id="x" src="Graphics/HuntGame/CrossNoHighlight.png">
+                <span class="tooltiptext">Quit game</span>
+            </div>
+            <div id="charecter1">
+            </div>
+            <div id="charecter2">
+            </div>
+            <div id="intro">
+                <audio id="fire" src="Sounds/StickGame/Crackling%20Fireplace%20Sound%20Effect%20HQ.aac"></audio>
+                <div id="dialog-1" class="dialog active">
+                   Old lady: <br>Hello there.
+                    <div class="right_button" onclick="next(2)">
+                
+                    </div>
+                </div>
+                <div id="dialog-2" class="dialog">
+                    Old lady: <br>What do you want young man?<br>
+                    <div class="left_button" onclick="back(1)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(3)">
+                
+                    </div>
+                </div>
+                <div id="dialog-3" class="dialog">
+                    Folke: <br>Hi! Would you happen to have any soldiers gear?
+                    <div class="left_button" onclick="back(2)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(4)">
+                
+                    </div>
+                </div>
+                <div id="dialog-4" class="dialog">
+                    Old lady: <br>Hmm... I do have my sons old helmet, <br>he passed away long time ago...
+                    <div class="left_button" onclick="back(3)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(5)">
+                        
+                    </div>
+                </div>
+                <div id="dialog-5" class="dialog">
+                    Folke: <br>Oh, im sorry to hear that... <br>Umm, could i loan it for a... project?
+                    <div class="left_button" onclick="back(4)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(6)">
+                
+                    </div>
+                </div>
+                <div id="dialog-6" class="dialog">
+                    Old lady: <br>You could... If you are smart enough <br>to solve these puzzles i've created. 
+                    <div class="left_button" onclick="back(5)">
+                
+                    </div>
+                    <div class="right_button" onclick="start()">
+                        
+                    </div >
+                </div>
+                
+                  
+            </div>
+        </div>
+    <div id="background_game">
+    
+        <img src="Graphics/StickGame/stick2.png" id="stick1" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick2" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick3" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick4" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick5" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick6" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick7" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick8" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick9" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick10" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick11" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick12" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick13" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick14" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick15" class="draggable" class="stick"/>
+        <img src="Graphics/StickGame/stick2.png" id="stick16" class="draggable" class="stick"/>
+        
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget1" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget2" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget3" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget4" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget5" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget6" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget7" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget8" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget9" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget10" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget11" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget12" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget13" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget14" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget15" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget16" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget17" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget18" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget19" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget20" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget21" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget22" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget23" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget24" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget25" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget26" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget27" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget28" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget29" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget30" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget31" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget32" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget33" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget34" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget35" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget36" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget37" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget38" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget39" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget40" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget41" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget42" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget43" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget44" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget45" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget46" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget47" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget48" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget49" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget50" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget51" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget52" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget53" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget54" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget55" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget56" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget57" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget58" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget59" class="stickTarget"/>
+        <img src="Graphics/StickGame/stick2.png" id="stickTarget60" class="stickTarget"/>
+        
+        
+        <div id="game_instructions">
+                <div id="instruction-1" class="instruction active">
+                    Explain game
+                    <div class="right_button2" onclick="next2(2)">
+                
+                    </div>
+                </div>
+                <div id="instruction-2" class="instruction">
+                    Explain game more
+                    <div class="left_button2" onclick="back2(1)">
+                
+                    </div>
+                    <div class="right_button2" onclick="next2(3)">
+                
+                    </div>
+                </div>
+                <div id="instruction-3" class="instruction">
+                    Explain game just a bit more
+                    <div class="left_button2" onclick="back2(2)">
+                
+                    </div>
+                    <div class="right_button2" onclick="next2(4)">
+                
+                    </div>
+                </div>
+                <div id="instruction-4" class="instruction">
+                    Start game by clicking the right button!
+                    <div class="left_button2" onclick="back2(3)">
+                
+                    </div>
+                    <div class="right_button2" onclick="game()">
+                        
+                    </div>
+                </div>
+        </div>
+        <div id="FirstPuzzle">Move 3 sticks to form 4 squares</div>
+        <button id="resetGameBtn" type="button">Reset Game</button>
+        <button id="nextGameBtn" type="button" onclick="NextGame()">Next Game</button>
+        <div class="quitGameBtn" type="button" onclick="reload()">
+            <img id="x" src="Graphics/HuntGame/CrossNoHighlight.png">
+            <span class="tooltiptext">Quit game</span>
+        </div>
+    </div>
+        
+        </div>
+</body>
+    <script src="Scripts/HuntGame/jQuery.js"></script>
+    <script src="Scripts/StickGame/jquery-ui.min.js"></script>
+    <script src="Scripts/HuntGame/howler.js"></script>
+    <script src="Scripts/smithgame.js"></script>
+    <script src="Scripts/StickGame/IntroJ.js"></script>
+    <script src="Scripts/StickGame/gameJ.js"></script> 
+</html>

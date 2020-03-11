@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "Archer_L.png",
+	"frame": {"x":0,"y":0,"w":343,"h":784},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":343,"h":784},
+	"sourceSize": {"w":343,"h":784}
+},
+{
+	"filename": "Archer_M.png",
+	"frame": {"x":343,"y":0,"w":331,"h":813},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":331,"h":813},
+	"sourceSize": {"w":331,"h":813}
+},
+{
+	"filename": "Archer_R.png",
+	"frame": {"x":674,"y":0,"w":351,"h":812},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":351,"h":812},
+	"sourceSize": {"w":351,"h":812}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Archer_directions.png",
+	"format": "RGBA8888",
+	"size": {"w":1025,"h":813},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:365473f2ae8b8400dbb33a53596e4804:486347fad55d578ec24ee1c4e273e5be:2e8f666cbf097dd2320c9b84a5f53fb0$"
+}
+}

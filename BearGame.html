@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="BearGame.css"/>
+        
+    </head>
+    <body>
+        <div id="wrap">
+            <video id="animation" autoplay="true" src="Animations/BearAnimation.mp4">
+            </video>
+            <img id="skip_button" src="Graphics/BearGame/skip_button.png"/>
+                
+            
+        </div>
+        <div id="background_intro">
+            <div id="intro">
+                <div id="instruction-1" class="instruction active">
+                    <span class="header">Bear chase</span><br>
+                    <p>A nearby bear got mad after seeing you wear a bear pelt! Run for your life!</p>
+                    <div class="right_button" onclick="next(2)">
+                
+                    </div>
+                </div>
+                <div id="instruction-2" class="instruction">
+                    <span class="header">Controls</span><br>
+                    <p>Use "W", "A", "S" and "D" to move.<br>Click or space to pause.</p>
+                    <div class="left_button" onclick="back(1)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(3)">
+                
+                    </div>
+                </div>
+                <div id="instruction-3" class="instruction">
+                    <span class="header">Hint</span><br>
+                    <p>Avoid hitting the trees.<br>Survive until the end of the time limit.</p>
+                    <div class="left_button" onclick="back(2)">
+                
+                    </div>
+                    <div class="right_button" onclick="next(4)">
+                
+                    </div>
+                </div>
+                <div id="instruction-4" class="instruction">
+                    <p>Begin by clicking the right arrow.<p>
+                    <span class="header">GOOD LUCK!</span>
+                    <div class="left_button" onclick="back(3)">
+                
+                    </div>
+                    <div class="right_button" onclick="start()">
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapSE" class="on">
+            <div id="sound" onclick="switchSound()">
+
+            </div>
+            <div id="exit" onclick="exitGame()">
+                
+            </div>
+        </div>
+        <div id="bearContainer">
+        <div id="gameName"></div>
+        <canvas id="map"></canvas>
+        <canvas id="trees"></canvas>
+        <canvas id="ax"></canvas>
+        <canvas id="player"></canvas>
+        <canvas id="bear"></canvas>
+        <canvas id="info"></canvas>
+        <canvas id="stats"></canvas>
+        </div>
+        
+        <!-- <video id="losing">
+            <source src="animations/losing.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+            Video tag not supported. Download the video <a href="animations/losing.mp4">here</a>.
+        </video>
+        <video id="winning">
+            <source src="animations/winning.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+            Video tag not supported. Download the video <a href="animations/winning.mp4">here</a>.
+        </video> -->
+    </body>
+    <script src="Scripts/HuntGame/howler.js"></script>
+        <script src="Scripts/HuntGame/jQuery.js"></script>
+        <script src="Scripts/BearGame/intro.js"></script>
+        <script src="Scripts/BearGame/player.js"></script>
+        <script src="Scripts/BearGame/bear.js"></script>
+        <script src="Scripts/BearGame/trees.js"></script>
+        <script src="Scripts/BearGame/ax.js"></script>
+        <script src="Scripts/BearGame/info.js"></script>
+        <script src="Scripts/BearGame/game.js"></script>
+</html>
